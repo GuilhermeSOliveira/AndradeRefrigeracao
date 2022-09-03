@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Banner from "./Componentes/Banner";
+import Servicos from "./Componentes/Servicos";
+import Titulo from "./Componentes/Titulo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner/>
+      <Titulo titulo="Nossos Servicos" />
+      <Servicos servico="Eletrica residencial, predial e comercial"/>
+      <Servicos servico="Leitura de projetos"/>
+      <Servicos servico="Instalacao de ar-condicionado"/>
+      <Servicos servico="Manutencao e higienizacao de ar-condicionado"/>
+      <Servicos servico="Vendas de ar-condicionado e materiais eletricos"/>
     </div>
   );
 }
