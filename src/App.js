@@ -12,6 +12,7 @@ function App() {
       <Servicos servico="Instalacao de ar-condicionado"/>
       <Servicos servico="Manutencao e higienizacao de ar-condicionado"/>
       <Servicos servico="Vendas de ar-condicionado e materiais eletricos"/>
+      <Titulo titulo="Tecnicos Responsaveis" />
     </div>
   );
 }

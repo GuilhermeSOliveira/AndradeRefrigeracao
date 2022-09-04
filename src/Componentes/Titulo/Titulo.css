@@ -1,6 +1,9 @@
-.Titulo h1 {
+.Titulo {
     text-align: center;
-    width: 400px;
+}
+
+.Titulo h1 {
+    display: inline-block;
     margin: 32px auto;
     padding: 0 12px;
     font-size: 48px;

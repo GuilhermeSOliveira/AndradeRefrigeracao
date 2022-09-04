@@ -1,6 +1,13 @@
+.Servicos img {
+    width: 32px;
+    height: 32px;
+    margin-left: 16px;
+}
+
 .Servicos p {
     color: #0a7bdb;
     font-size: 32px;
     margin: 32px;
     font-weight: 1000;
+    display: inline-block;
 }

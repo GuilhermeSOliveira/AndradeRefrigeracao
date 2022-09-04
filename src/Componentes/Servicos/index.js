@@ -3,6 +3,7 @@ import './Servicos.css'
 const Servicos = (props) => {
     return (
         <div className='Servicos'>
+            <img src='/imagens/icone-servicos.png' alt='icone servicos' />
             <p>{props.servico}</p>
         </div>
     )
