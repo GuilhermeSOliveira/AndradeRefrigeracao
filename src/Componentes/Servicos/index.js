@@ -4,7 +4,7 @@ const Servicos = (props) => {
     return (
         <div className='Servicos'>
             <img src='/imagens/icone-servicos.png' alt='icone servicos' />
-            <p>{props.servico}</p>
+            <p>{props.tipo}</p>
         </div>
     )
 }

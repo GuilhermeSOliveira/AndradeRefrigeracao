@@ -1,0 +1,23 @@
+.tecnicos {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+.tecnicos h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0a7bdb;
+    border-bottom: 4px solid ;
+    display: inline-block;
+}
+
+.tecnicos ul li {
+    font-size: 24px;
+    list-style: none;
+    line-height: 30px;
+    color: #0a7bdb;
+    font-weight: bold;
+}
+
+
