@@ -1,4 +1,5 @@
-import Banner from "./Componentes/Banner";
+import Descricao from "./Componentes/Descricao";
+import Header from "./Componentes/Header";
 import Servicos from "./Componentes/Servicos";
 import Tecnicos from "./Componentes/Tecnicos";
 import Titulo from "./Componentes/Titulo";
@@ -15,7 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <Banner/>
+      <Header />
+      <Descricao />
       <Titulo titulo="Nossos Serviços" />
       
       {listaServicos.map(servico => <Servicos key={servico} tipo={servico} />)}

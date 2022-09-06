@@ -1,0 +1,21 @@
+.descricao {
+    display: flex;
+    align-items: center;
+    color: #E8F8FF;
+    background-color: #0d75c9;
+}
+
+.descricao img {
+    margin: auto 2% auto 10%;
+}
+
+.descricao h1 {
+    text-align: left;
+    margin: auto 10% auto 0;
+    font-size: 64px;
+}
+
+.descricao h1 p {
+    font-size: 16px;
+    width: 80%;
+}
