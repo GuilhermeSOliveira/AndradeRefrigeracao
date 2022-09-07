@@ -6,25 +6,28 @@ import Titulo from "./Componentes/Titulo";
 
 function App() {
 
-  const listaServicos = [
-    'Elétrica residencial, predial e comercial',
-    'Leitura de projetos',
-    'Instalação de ar-condicionado',
-    'Manutenção e higienizacao de ar-condicionado',
-    'Vendas de ar-condicionado e materiais elétricos'
+  const tecnicos = [
+    {
+      nome: 'Moises Andrade',
+      especializacao1: 'Elétrica residencial, predial e comercial',
+      especializacao2: 'Leitura de Projetos'
+    },
+    {
+      nome: 'Matheus Andrade',
+      especializacao1: 'Instalação de ar-condicionado',
+      especializacao2: 'Manutenção e higienizacao de ar-condicionado'
+    }
   ]
 
   return (
     <div className="App">
       <Header />
       <Descricao />
-      <Titulo titulo="Nossos Serviços" />
-      
-      {listaServicos.map(servico => <Servicos key={servico} tipo={servico} />)}
-      
+      <Servicos />
       <Titulo titulo="Técnicos Responsáveis" />
-      <Tecnicos nome="Moisés" especializacao1="Elétrica residencial, predial e comercial" especializacao2="Leitura de Projetos"/>
-      <Tecnicos nome="Matheus" especializacao1="Instalação de ar-condicionado" especializacao2="Manutenção e higienizacao de ar-condicionado"/>
+
+      {tecnicos.map(profissional => <Tecnicos nome={profissional.nome} especializacao1={profissional.especializacao1} especializacao2={profissional.especializacao2}/>)}
+
     </div>
   );
 }

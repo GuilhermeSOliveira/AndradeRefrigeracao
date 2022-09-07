@@ -1,9 +1,9 @@
-.cabecalho {
+.Header {
     background-color: #0d75c9;
     padding: 64px 0;
 }
 
-.cabecalho header {
+.Header header {
     background-color: #FFF;
     height: 100px;
     width: 60%;
@@ -16,14 +16,15 @@
     background-color: #E8F8FF;
 }
 
-.cabecalho img {
+.Header img {
     width: 20%;
-    height: 80%;
+    height: 100%;
     margin: 10px;
 }
 
-.cabecalho header nav a {
+.Header header nav a {
     margin: 16px;
     text-decoration: none;
     color: #0d75c9;
+    font-weight: bold;
 }

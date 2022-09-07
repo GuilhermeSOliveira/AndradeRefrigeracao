@@ -1,13 +1,30 @@
+.Servicos {
+    display: flex;
+    background-color: #E8F8FF;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 32px;
+    position: absolute;
+    left: 10%;
+    top: 70%;
+}
+
+.Servicos div {
+    flex-basis: 20%;
+    margin: 32px auto;
+}
+
 .Servicos img {
-    width: 32px;
-    height: 32px;
-    margin-left: 16px;
+    width: 64px;
+    height: 64px;
+}
+
+.Servicos h3 {
+    font-size: 32px;
+    font-weight: bolder;
 }
 
 .Servicos p {
-    color: #0a7bdb;
-    font-size: 32px;
-    margin: 32px;
-    font-weight: 1000;
-    display: inline-block;
+    font-weight: bold;
+    color: #5c5c5c;
 }

@@ -3,7 +3,7 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className='cabecalho'>
+        <div className='Header'>
             <header>
                 <img src='./imagens/Banner-Header.png' alt='' />
                 <nav>
