@@ -1,3 +1,4 @@
+import Contato from "./Componentes/Contato";
 import Descricao from "./Componentes/Descricao";
 import Header from "./Componentes/Header";
 import Servicos from "./Componentes/Servicos";
@@ -27,6 +28,8 @@ function App() {
       <Titulo titulo="Técnicos Responsáveis" />
 
       {tecnicos.map(profissional => <Tecnicos nome={profissional.nome} especializacao1={profissional.especializacao1} especializacao2={profissional.especializacao2}/>)}
+
+      <Contato />
 
     </div>
   );

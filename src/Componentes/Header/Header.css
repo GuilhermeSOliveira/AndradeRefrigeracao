@@ -1,6 +1,29 @@
 .Header {
     background-color: #0d75c9;
-    padding: 64px 0;
+}
+
+.Header section {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.Header section img {
+    height: 32px;
+    width: 32px;
+    margin-left: 19%;
+}
+
+.Header section div {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.Header section div p {
+    color: #E8F8FF;
+    font-size: 16px;
 }
 
 .Header header {
