@@ -34,3 +34,43 @@
     transition: 500ms;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+
+    .descricao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao .banner1 {
+        width: 128px;
+        height: 128px;
+        margin: 10% auto;
+    }
+
+    .descricao div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao div h1 {
+        font-size: 32px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .descricao div p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .descricao div button {
+        margin: 16px auto;
+    }
+
+    .descricao .banner2 {
+        width: 256px;
+        height: 256px;
+    }
+}
