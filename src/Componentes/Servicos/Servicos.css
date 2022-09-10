@@ -28,3 +28,28 @@
     font-weight: bold;
     color: #5c5c5c;
 }
+
+@media (max-width: 768px) {
+
+    .Servicos {
+        flex-direction: column;
+        top: 100%;
+    }
+
+    .Servicos img {
+        width: 32px;
+        height: 32px;
+        margin: 0 45%;
+    }
+
+    .Servicos h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .Servicos p {
+        font-size: 12px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
