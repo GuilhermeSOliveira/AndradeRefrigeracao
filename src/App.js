@@ -27,7 +27,7 @@ function App() {
       <Servicos />
       <Titulo titulo="Técnicos Responsáveis" />
 
-      {tecnicos.map(profissional => <Tecnicos nome={profissional.nome} especializacao1={profissional.especializacao1} especializacao2={profissional.especializacao2}/>)}
+      {tecnicos.map(profissional => <Tecnicos key={profissional.nome} nome={profissional.nome} especializacao1={profissional.especializacao1} especializacao2={profissional.especializacao2}/>)}
 
       <Contato />
 

@@ -13,9 +13,8 @@
     display: inline-block;
 }
 
-.tecnicos ul li {
+.tecnicos p {
     font-size: 24px;
-    list-style: none;
     line-height: 30px;
     color: #0a7bdb;
     font-weight: bold;
@@ -33,7 +32,7 @@
         font-size: 16px;
     }
 
-    .tecnicos ul li {
+    .tecnicos p {
         font-size: 12px;
     }
 }

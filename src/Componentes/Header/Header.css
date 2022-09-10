@@ -28,7 +28,7 @@
 
 .Header header {
     background-color: #FFF;
-    height: 100px;
+    height: max-content;
     width: 60%;
     margin: auto;
     border-radius: 10px;
@@ -77,5 +77,14 @@
 
     .Header header {
         flex-direction: column;
+    }
+
+    .Header nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Header header img {
+        display: none;
     }
 }
