@@ -66,11 +66,10 @@
     }
 
     .descricao div button {
-        margin: 16px auto;
+        margin: 32px auto;
     }
 
     .descricao .banner2 {
-        width: 256px;
-        height: 256px;
+        display: none;
     }
 }
