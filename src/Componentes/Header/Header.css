@@ -45,6 +45,16 @@
     margin: 10px;
 }
 
+.Header header nav button {
+    display: none;
+}
+
+.Header nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
 .Header header nav a {
     margin: 16px;
     text-decoration: none;
@@ -77,6 +87,8 @@
 
     .Header header {
         flex-direction: column;
+        background-color: #0d75c9;
+        margin-left: 60%;
     }
 
     .Header nav {
@@ -84,7 +96,74 @@
         flex-direction: column;
     }
 
+    .Header nav ul {
+        font-size: 12px;
+    }
+
     .Header header img {
         display: none;
+    }
+
+    .Header header nav button {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        width: 20px;
+        border-top: 2px solid #E8F8FF;
+        display: block;
+    }
+
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #E8F8FF;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(135deg);
+        top: -7px;
+    }
+
+    #nav.active #hamburguer::before {
+        transform: rotate(-135deg);
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 40%;
+        top: 138px;
+        left: 60%;
+        border-radius: 10px;
+        background-color: #E8F8FF;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        text-align: center;
+        line-height: 200%;
+    }
+
+    #nav.active #menu {
+        flex-direction: column;
+        height: 70px;
+        visibility: visible;
+        overflow-y: auto;
     }
 }

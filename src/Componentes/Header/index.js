@@ -4,6 +4,13 @@ import Tecnicos from '../Tecnicos'
 import './Header.css'
 
 const Header = () => {
+
+    function toggleMenu () {
+        const nav = document.getElementById('nav')
+
+        nav.classList.toggle('active')
+    }
+
     return (
         <div className='Header'>
             <section>
@@ -15,10 +22,15 @@ const Header = () => {
             </section>
             <header>
                 <img src='./imagens/Banner-Header.png' alt='' />
-                <nav>
-                    <a href={<Servicos />}>Nossos Serviços</a>
-                    <a href={<Tecnicos />}>Técnicos Responsáveis</a>
-                    <a href={<Contato />}>Contato</a>
+                <nav id='nav'>
+                    <button onClick={toggleMenu}>
+                        <span id='hamburguer'></span>
+                    </button>
+                    <ul id='menu'>
+                        <li><a href={<Servicos />}>Nossos Serviços</a></li>
+                        <li><a href={<Tecnicos />}>Técnicos Responsáveis</a></li>
+                        <li><a href={<Contato />}>Contato</a></li>
+                    </ul>
                 </nav>
             </header>
         </div>
